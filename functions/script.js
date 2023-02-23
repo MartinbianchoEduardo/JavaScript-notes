@@ -147,11 +147,33 @@
 // const addTax23 = addTax.bind(null, 0.23); //null because 'this' is not necessary
 // console.log(addTax23(100));
 
-//IIFE - immediately invoked function expressions
-(function () {
-  console.log("this will run only once");
-})();
-//wraping it inside () will make it a expression
-//we call it by adding the () at the end of the function
+// //IIFE - immediately invoked function expressions
+// (function () {
+//   console.log("this will run only once");
+// })();
+// //wraping it inside () will make it a expression
+// //we call it by adding the () at the end of the function
+// (() => console.log("this will also never run again"))();
 
-(() => console.log("this will also never run again"))();
+//closure
+const secureBooking = function () {
+  let passengerCount = 0;
+
+  return function () {
+    passengerCount++;
+    console.log(passengerCount);
+  };
+};
+
+const booker = secureBooking();
+booker();
+booker();
+
+//how can booker() acces the passengerCount variable?
+//any function will always have access to the environment of the execution context
+//in which the function was created, even after that execution context is gone
+//since the booker function was born in the context of secureBooking, it will get
+// to that variable environment
+//this connection between the functions is called Closure
+
+//this is fully automatic, we don't have to manually create this connections
