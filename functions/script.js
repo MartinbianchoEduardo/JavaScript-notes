@@ -93,56 +93,65 @@
 // ['Jonas', 'Martha', 'Adam'].forEach(high5);
 
 ///////////////////////////////////////
-// Functions Returning Functions
-const greet = function (greeting) {
-  return function (name) {
-    console.log(`${greeting} ${name}`);
-  };
-};
+// // Functions Returning Functions
+// const greet = function (greeting) {
+//   return function (name) {
+//     console.log(`${greeting} ${name}`);
+//   };
+// };
 
-const greeterHey = greet("Hey");
-greeterHey("Jonas");
-greeterHey("Steven");
+// const greeterHey = greet("Hey");
+// greeterHey("Jonas");
+// greeterHey("Steven");
 
-greet("Hello")("Jonas");
+// greet("Hello")("Jonas");
 
-const greetArrow = (greeting) => (name) => console.log(`${greeting} ${name}`);
-const greeterHi = greetArrow("hi");
-greeterHi("jonas");
+// const greetArrow = (greeting) => (name) => console.log(`${greeting} ${name}`);
+// const greeterHi = greetArrow("hi");
+// greeterHi("jonas");
 
-const lufthansa = {
-  airline: "Lufthansa",
-  iataCode: "LH",
-  bookings: [],
-  book(flightNum, name) {
-    console.log(
-      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
-    );
-    this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
-  },
-};
+// const lufthansa = {
+//   airline: "Lufthansa",
+//   iataCode: "LH",
+//   bookings: [],
+//   book(flightNum, name) {
+//     console.log(
+//       `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+//     );
+//     this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
+//   },
+// };
 
-lufthansa.planes = 300;
-lufthansa.buyPlane = function () {
-  console.log(this);
-  this.planes++;
-  console.log(this.planes);
-};
+// lufthansa.planes = 300;
+// lufthansa.buyPlane = function () {
+//   console.log(this);
+//   this.planes++;
+//   console.log(this.planes);
+// };
 
-// document.querySelector(".buy").addEventListener("click", lufthansa.buyPlane);
+// // document.querySelector(".buy").addEventListener("click", lufthansa.buyPlane);
 
-//in an event listener, the this keyword points to the element (.buy in this case)
-//so we use the .bind() method - to bind the this keyword to what we want
+// //in an event listener, the this keyword points to the element (.buy in this case)
+// //so we use the .bind() method - to bind the this keyword to what we want
 
-document
-  .querySelector(".buy")
-  .addEventListener("click", lufthansa.buyPlane.bind(lufthansa));
+// document
+//   .querySelector(".buy")
+//   .addEventListener("click", lufthansa.buyPlane.bind(lufthansa));
 
-//the bind method can also set the parameters to be fixed
-//the first param is the this keyword bind and the following are the function params
+// //the bind method can also set the parameters to be fixed
+// //the first param is the this keyword bind and the following are the function params
 
-const addTax = (rate, value) => value + value * rate;
-console.log(addTax(0.2, 200));
+// const addTax = (rate, value) => value + value * rate;
+// console.log(addTax(0.2, 200));
 
-const addTax23 = addTax.bind(null, 0.23); //null because 'this' is not necessary
-console.log(addTax23(100));
+// const addTax23 = addTax.bind(null, 0.23); //null because 'this' is not necessary
+// console.log(addTax23(100));
+
+//IIFE - immediately invoked function expressions
+(function () {
+  console.log("this will run only once");
+})();
+//wraping it inside () will make it a expression
+//we call it by adding the () at the end of the function
+
+(() => console.log("this will also never run again"))();
