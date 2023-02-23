@@ -137,3 +137,12 @@ lufthansa.buyPlane = function () {
 document
   .querySelector(".buy")
   .addEventListener("click", lufthansa.buyPlane.bind(lufthansa));
+
+//the bind method can also set the parameters to be fixed
+//the first param is the this keyword bind and the following are the function params
+
+const addTax = (rate, value) => value + value * rate;
+console.log(addTax(0.2, 200));
+
+const addTax23 = addTax.bind(null, 0.23); //null because 'this' is not necessary
+console.log(addTax23(100));
