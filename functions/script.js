@@ -177,3 +177,16 @@ booker();
 //this connection between the functions is called Closure
 
 //this is fully automatic, we don't have to manually create this connections
+
+const boardPassengers = function (n, wait) {
+  const perGroup = n / 3;
+
+  setTimeout(function () {
+    console.log(`boarding all ${n} passengers`);
+    console.log(`there are 3 groups, each with ${perGroup} passengers`);
+  }, wait * 1000);
+
+  console.log(`will start boarding in ${wait}`);
+};
+
+boardPassengers(10, 3);
