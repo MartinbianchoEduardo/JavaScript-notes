@@ -190,3 +190,6 @@ const boardPassengers = function (n, wait) {
 };
 
 boardPassengers(10, 3);
+
+//the function can use all the variables that were created in the environment it was created
+//n and perGroup
