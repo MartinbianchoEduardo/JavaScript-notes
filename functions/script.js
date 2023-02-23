@@ -109,3 +109,31 @@ greet("Hello")("Jonas");
 const greetArrow = (greeting) => (name) => console.log(`${greeting} ${name}`);
 const greeterHi = greetArrow("hi");
 greeterHi("jonas");
+
+const lufthansa = {
+  airline: "Lufthansa",
+  iataCode: "LH",
+  bookings: [],
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+    );
+    this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
+  },
+};
+
+lufthansa.planes = 300;
+lufthansa.buyPlane = function () {
+  console.log(this);
+  this.planes++;
+  console.log(this.planes);
+};
+
+// document.querySelector(".buy").addEventListener("click", lufthansa.buyPlane);
+
+//in an event listener, the this keyword points to the element (.buy in this case)
+//so we use the .bind() method - to bind the this keyword to what we want
+
+document
+  .querySelector(".buy")
+  .addEventListener("click", lufthansa.buyPlane.bind(lufthansa));
