@@ -164,3 +164,27 @@ const currencies = new Map([
 // //but it's still required to pass those parameters
 
 //bank project
+const displayMovements = movements => {
+  //first, empty the old elements
+  containerMovements.innerHTML = '';
+  //innerHTML returns all the html included, while innerText only the text
+
+  movements.forEach(function (mov, i) {
+    const type = mov > 0 ? 'deposit' : 'withdrawal';
+
+    const html = `
+    <div class="movements__row">
+          <div class="movements__type movements__type--${type}">${
+      i + 1
+    } ${type}</div>
+          <div class="movements__value">${mov}</div>
+      </div>
+        `;
+
+    containerMovements.insertAdjacentHTML('afterbegin', html);
+    //this will add the html written after the beggining of the containerMovements
+    //check docs to view afterbegin, beforeend and other options
+  });
+};
+
+displayMovements(account1.movements);
