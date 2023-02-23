@@ -65,13 +65,13 @@ const inputClosePin = document.querySelector('.form__input--pin');
 /////////////////////////////////////////////////
 // LECTURES
 
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
 const currencies = new Map([
   ['USD', 'United States dollar'],
   ['EUR', 'Euro'],
   ['GBP', 'Pound sterling'],
 ]);
-
-// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
 
@@ -125,21 +125,42 @@ const currencies = new Map([
 
 ////////////////////////////////////////////////////////////////
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-//forEach loop
-movements.forEach(function (movement) {
-  movement < 0
-    ? console.log(`withdrawal of ${Math.abs(movement)}`)
-    : console.log(`deposit of ${movement}`);
-});
-//if we want the current index
-movements.forEach(function (movement, index, array) {
-  movement < 0
-    ? console.log(
-        `${index + 1}: withdrawal of ${Math.abs(movement)} in ${array}`
-      )
-    : console.log(`${index + 1}: deposit of ${Math.abs(movement)} in ${array}`);
-});
-//can get the current index and the whole array passing those parameters
-//the first is always the element, the second always the index and array is the third
+// //forEach loop in arrays
+// movements.forEach(function (movement) {
+//   movement < 0
+//     ? console.log(`withdrawal of ${Math.abs(movement)}`)
+//     : console.log(`deposit of ${movement}`);
+// });
+// //if we want the current index
+// movements.forEach(function (movement, index, array) {
+//   movement < 0
+//     ? console.log(
+//         `${index + 1}: withdrawal of ${Math.abs(movement)} in ${array}`
+//       )
+//     : console.log(`${index + 1}: deposit of ${Math.abs(movement)} in ${array}`);
+// });
+// //can get the current index and the whole array passing those parameters
+// //the first is always the element, the second always the index and array is the third
+
+// // forEach in maps
+// const currencies = new Map([
+//   ['USD', 'United States dollar'],
+//   ['EUR', 'Euro'],
+//   ['GBP', 'Pound sterling'],
+// ]);
+
+// currencies.forEach(function (value, key, map) {
+//   console.log(key, value);
+// });
+
+// //forEach in sets
+// const currenciesUnique = new Set(['USD', 'GBP', 'USD', 'EUR', 'EUR']);
+// currenciesUnique.forEach(function (value, key, map) {
+//   console.log(key, value);
+// });
+// //the key and value parameters are exactly the same
+// //but it's still required to pass those parameters
+
+//bank project
