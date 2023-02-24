@@ -245,3 +245,11 @@ calcDisplaySummary(account1.movements);
 
 //every method
 //returns true if all elements in the array satisfy the given condition
+
+//how to sort an array
+//a = current element
+//b = next element
+movements.sort((a, b) => {
+  if (a > b) return 1;
+  if (b > a) return -1;
+});
