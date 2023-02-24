@@ -212,3 +212,11 @@ const calcDisplayBalance = function (movements) {
 };
 
 calcDisplayBalance(account1.movements);
+
+//maximum value
+const max = movements.reduce(function (acc, mov) {
+  if (acc > mov) return acc;
+  else return mov; //this returns mov as the new acc
+}, movements[0]);
+
+console.log(max);
