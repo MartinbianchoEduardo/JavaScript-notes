@@ -171,9 +171,14 @@ const currencies = new Map([
 //filter method
 //filter the elements in an array
 //elements for which the condition is true will be added to a new array and returned
+//while writting the method, return a boolean value
 
 //reduce method
 //boils all array elements into a single value
+//accumulator accumulates the values
+//return acc + currentValue
+//the first param of this method is the callback function
+//the second param is the initial value of the accumulator
 
 //bank project
 const displayMovements = movements => {
