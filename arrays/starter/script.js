@@ -240,7 +240,7 @@ const calcDisplaySummary = function (movements) {
 
 calcDisplaySummary(account1.movements);
 
-//some method
+//SOME method
 //returns true if at least one of the elements in the array satisfy the given condition
 
 //every method
