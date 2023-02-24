@@ -239,3 +239,9 @@ const calcDisplaySummary = function (movements) {
 };
 
 calcDisplaySummary(account1.movements);
+
+//some method
+//returns true if at least one of the elements in the array satisfy the given condition
+
+//every method
+//returns true if all elements in the array satisfy the given condition
