@@ -163,6 +163,18 @@ const currencies = new Map([
 // //the key and value parameters are exactly the same
 // //but it's still required to pass those parameters
 
+//map method
+//the map method loop through an array and apply a callback function for each item
+//returns a new array with the result
+//arr.map(function (elem) {return do this for each elem})
+
+//filter method
+//filter the elements in an array
+//elements for which the condition is true will be added to a new array and returned
+
+//reduce method
+//boils all array elements into a single value
+
 //bank project
 const displayMovements = movements => {
   //first, empty the old elements
