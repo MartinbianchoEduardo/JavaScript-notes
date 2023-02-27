@@ -103,4 +103,11 @@ console.log(logo.dataset.versionNumber);
 // logo.classList.add();
 // logo.classList.remove();
 // logo.classList.toggle();
-// logo.classList.contains();
+// logo.classList.contains(); //not 'includes'
+
+//smooth scrolling
+const btnScrollTo = document.querySelector('.btn--scroll-to');
+btnScrollTo.addEventListener('click', function () {
+  const section1 = document.querySelector('#section--1');
+  section1.scrollIntoView({ behavior: 'smooth' });
+});
