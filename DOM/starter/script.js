@@ -74,3 +74,33 @@ message.style.backgroundColor = '#37383d';
 
 //get element style property
 console.log(getComputedStyle(message).color);
+
+message.style.height =
+  Number.parseFloat(getComputedStyle(message).height, 10) + 20 + 'px';
+//the 10 is bacause of the number table
+
+// document.documentElement.style.setProperty('--color-primary', 'orangered');
+
+//attributes
+const logo = document.querySelector('.nav__logo');
+console.log(logo.alt);
+console.log(logo.src);
+//we can get the standard properties from elements
+//i.e. standard properties are img = src, alt - a = href
+
+//we cannot get non-standard attributes
+//only with the getAttribute()
+// console.log(logo.getAttribute('non-standard-attribute'));
+
+//data attributes
+//attributes that start with "data"
+console.log(logo.dataset.versionNumber);
+//these attributes are always stored in the dataset object
+//notice that is necessary to transform the attribute name into camelCase
+//from data-versio-number to dataset.versionNumber
+
+//classes
+// logo.classList.add();
+// logo.classList.remove();
+// logo.classList.toggle();
+// logo.classList.contains();
