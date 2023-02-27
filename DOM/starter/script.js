@@ -111,3 +111,29 @@ btnScrollTo.addEventListener('click', function () {
   const section1 = document.querySelector('#section--1');
   section1.scrollIntoView({ behavior: 'smooth' });
 });
+
+//navigation
+// document.querySelectorAll('.nav__link').forEach(function (el) {
+//   el.addEventListener('click', function (e) {
+//     e.preventDefault();
+
+//     const id = this.getAttribute('href');
+//     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+//   });
+// });
+//this is a good solution
+//however, we are calling the same function to every element
+//this would be terrible if we had lots of elements
+
+//so we use event delegation
+//by calling the function in a parent element
+//1. add the event listener to common parent element
+//2. determine what element originated the event
+document.querySelector('.nav__links').addEventListener('click', function (e) {
+  e.preventDefault();
+
+  if (e.target.classList.contains('nav__link')) {
+    const id = e.target.getAttribute('href');
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+  }
+});
