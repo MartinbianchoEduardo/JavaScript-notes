@@ -49,7 +49,7 @@ message.innerHTML =
 
 // header.prepend(message);
 //prepand() adds the element as the first child
-header.append(message);
+// header.append(message);
 //append() adds the element as the last child
 //notice the cookie message is added only one time
 //an elemente can only exist always one place at a time
@@ -62,11 +62,11 @@ header.append(message);
 // header.after(message);
 
 //delete elements
-document
-  .querySelector('.btn--close-cookie')
-  .addEventListener('click', function () {
-    message.remove();
-  });
+// document
+//   .querySelector('.btn--close-cookie')
+//   .addEventListener('click', function () {
+//     message.remove();
+//   });
 
 //styles
 message.style.backgroundColor = '#37383d';
@@ -136,4 +136,29 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
     const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
+});
+
+//operations tab
+const tabs = document.querySelectorAll('.operations__tab');
+const tabsContainer = document.querySelector('.operations__tab-container');
+const tabsContent = document.querySelectorAll('.operations__content');
+
+tabsContainer.addEventListener('click', function (e) {
+  const clicked = e.target.closest('.operations__tab');
+  //finds the closest elemtns with this class name (operations__tab)
+
+  if (!clicked) return;
+  //if click in null target, stops the function
+
+  tabs.forEach(t => t.classList.remove('operations__tab--active'));
+  tabsContent.forEach(c => c.classList.remove('operations__content--active'));
+
+  //activate tab
+  clicked.classList.add('operations__tab--active');
+
+  //activate content area
+  document
+    .querySelector(`.operations__content--${clicked.dataset.tab}`)
+    .classList.add('operations__content--active');
+  //since the class is named "data-tab" we select ".dataset.tab"
 });
