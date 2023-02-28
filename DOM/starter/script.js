@@ -105,10 +105,10 @@ console.log(logo.dataset.versionNumber);
 // logo.classList.toggle();
 // logo.classList.contains(); //not 'includes'
 
+const section1 = document.querySelector('#section--1');
 //smooth scrolling
 const btnScrollTo = document.querySelector('.btn--scroll-to');
 btnScrollTo.addEventListener('click', function () {
-  const section1 = document.querySelector('#section--1');
   section1.scrollIntoView({ behavior: 'smooth' });
 });
 
@@ -181,3 +181,33 @@ const nav = document.querySelector('.nav');
 nav.addEventListener('mouseover', handleHover.bind(0.5));
 
 nav.addEventListener('mouseout', handleHover.bind(1));
+
+// //sticky nav with intersection observer API
+// const observerCallback = function (entries, observer) {};
+// //this function will be called each time the target element (header) is intersecting
+// //the root element at the treshold that we define below
+// const observerOptions = {
+//   root: null,
+//   //root:null = root:viewport
+//   threshold: [0, 0.2],
+//   //the % of intersection at which the observer callback will be called
+//   //this is the % of the viewport occupied by the target
+//   //when the target is occupying this percentage, the callback will be called
+// };
+
+const navHeight = nav.getBoundingClientRect().height;
+
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) {
+    nav.classList.add('sticky');
+  } else nav.classList.remove('sticky');
+};
+
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+  //to make it appear exaclty 90px away from the section (the size of the nav)
+});
+headerObserver.observe(header);
