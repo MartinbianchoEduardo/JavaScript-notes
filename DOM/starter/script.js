@@ -165,7 +165,10 @@ tabsContainer.addEventListener('click', function (e) {
 
 //nav fade hover
 const handleHover = function (e, opacity) {
-  if (e.target.classList.contains('nav__link')) {
+  if (
+    e.target.classList.contains('nav__link') ||
+    e.target.classList.contains('nav__logo')
+  ) {
     const link = e.target;
     const siblings = link.closest('.nav').querySelectorAll('.nav__link');
     const logo = link.closest('.nav').querySelector('img');
@@ -173,7 +176,6 @@ const handleHover = function (e, opacity) {
     siblings.forEach(el => {
       if (el !== link) el.style.opacity = this;
     });
-    logo.style.opacity = this;
   }
 };
 
