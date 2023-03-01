@@ -35,6 +35,7 @@ Person.prototype.species = 'homo sapiens';
 //see .hasOwnProperty() method
 console.log(jonas.species);
 
+//challenge 1
 const Car = function (make, speed) {
   this.make = make;
   this.speed = speed;
