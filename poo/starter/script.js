@@ -63,35 +63,35 @@
 // veyron.brake();
 
 // //ES6 Classes
-class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
 
-  //methods are added to the prototype of the object
-  toString() {
-    console.log(`${this.name} is ${this.age} years old`);
-  }
+//   //methods are added to the prototype of the object
+//   toString() {
+//     console.log(`${this.name} is ${this.age} years old`);
+//   }
 
-  //getters and setters
-  get birthYear() {
-    return 2023 - this._age;
-  }
+//   //getters and setters
+//   get birthYear() {
+//     return 2023 - this._age;
+//   }
 
-  set age(age) {
-    this._age = age;
-  }
+//   set age(age) {
+//     this._age = age;
+//   }
 
-  //static method (dont go to prototype) explanation below
-  static hey() {
-    console.log(`Hey (${this.name})`);
-    console.log(this);
-  }
-}
+//   //static method (dont go to prototype) explanation below
+//   static hey() {
+//     console.log(`Hey (${this.name})`);
+//     console.log(this);
+//   }
+// }
 
-const john = new Person('john', 43);
-// john.toString();
+// const john = new Person('john', 43);
+// // john.toString();
 
 // //IMPORTANT
 // //classes are NOT hoisted
@@ -108,40 +108,109 @@ const john = new Person('john', 43);
 // //john.hey doesnt work because the instances do not inherit static methods
 // john.hey();
 
-//challenge 2
-class Car {
-  constructor(make, speed) {
-    this.make = make;
-    this.speed = speed;
+// //challenge 2
+// class Car {
+//   constructor(make, speed) {
+//     this.make = make;
+//     this.speed = speed;
+//   }
+
+//   accelerate() {
+//     this.speed += 10;
+//     console.log(this.speed + 'km/h');
+//   }
+
+//   brake() {
+//     this.speed -= 5;
+//     console.log(this.speed + 'km/h');
+//   }
+
+//   get speedUS() {
+//     return this.speed / 1.6;
+//   }
+
+//   set speedUS(speed) {
+//     this.speed = speed * 1.6;
+//   }
+// }
+
+// const lfa = new Car('lexus', 230);
+// lfa.accelerate();
+// lfa.accelerate();
+// lfa.accelerate();
+// lfa.brake();
+// lfa.brake();
+
+// console.log(lfa.speedUS);
+// lfa.speedUS = 100;
+// console.log(lfa);
+// lfa.brake();
+
+//ES6 Classes
+class Person {
+  constructor(fullName, birthYear) {
+    this.fullName = fullName;
+    this.birthYear = birthYear;
   }
 
-  accelerate() {
-    this.speed += 10;
-    console.log(this.speed + 'km/h');
+  //methods are added to the prototype of the object
+  toString() {
+    console.log(`${this.fullName} was born in ${this.birthYear}`);
   }
 
-  brake() {
-    this.speed -= 5;
-    console.log(this.speed + 'km/h');
+  //getters and setters
+  set fullName(name) {
+    if (name.includes(' ')) this._fullName = name;
+    else console.log('this is not a full name');
   }
 
-  get speedUS() {
-    return this.speed / 1.6;
+  get fullName() {
+    return this._fullName;
   }
 
-  set speedUS(speed) {
-    this.speed = speed * 1.6;
+  get birthYear() {
+    return this._birthYear;
+  }
+
+  set birthYear(year) {
+    this._birthYear = year;
+  }
+
+  get age() {
+    return 2023 - this.birthYear;
   }
 }
 
-const lfa = new Car('lexus', 230);
-lfa.accelerate();
-lfa.accelerate();
-lfa.accelerate();
-lfa.brake();
-lfa.brake();
+const john = new Person('john', 2003);
 
-console.log(lfa.speedUS);
-lfa.speedUS = 100;
-console.log(lfa);
-lfa.brake();
+john.birthYear = 2003;
+console.log(john._birthYear);
+console.log(john.birthYear);
+console.log(john.age);
+
+//extends keyword will make that Student inherits Person
+class Student extends Person {
+  constructor(fullName, birthYear, course) {
+    //the super is made of the parents parameters (fullName and birthYear in this case)
+    super(fullName, birthYear);
+    this.course = course;
+  }
+
+  introduce() {
+    console.log('im a student');
+  }
+
+  get age() {
+    return `this method has been overwritten but his person is${
+      2023 - this._birthYear
+    } years old`;
+  }
+}
+
+const ed = new Student('edward scissor hands', 1972, 'gastronomy');
+console.log(ed);
+console.log(john);
+ed.toString();
+ed.introduce();
+console.log(ed.age);
+console.log(john.age);
