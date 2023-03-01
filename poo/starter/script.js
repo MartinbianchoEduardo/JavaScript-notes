@@ -34,3 +34,29 @@ Person.prototype.species = 'homo sapiens';
 //however, this property will not be owned by the object, but inherited from its prototype
 //see .hasOwnProperty() method
 console.log(jonas.species);
+
+const Car = function (make, speed) {
+  this.make = make;
+  this.speed = speed;
+};
+
+Car.prototype.accelerate = function () {
+  this.speed += 10;
+  console.log(this.speed);
+};
+
+Car.prototype.brake = function () {
+  this.speed -= 5;
+  console.log(this.speed);
+};
+
+const veyron = new Car('bugatti', 190);
+const corvette = new Car('chevrolet', 120);
+console.log(corvette);
+corvette.brake();
+veyron.accelerate();
+veyron.accelerate();
+veyron.accelerate();
+corvette.accelerate();
+corvette.brake();
+veyron.brake();
