@@ -159,6 +159,10 @@ class Person {
   }
 
   //getters and setters
+  //remember if you have a setter for a property that already exists, like fullName
+  //you'll have to create sort of a new property with "_" in front of it
+  //and return the new property in the getter
+
   set fullName(name) {
     if (name.includes(' ')) this._fullName = name;
     else console.log('this is not a full name');
