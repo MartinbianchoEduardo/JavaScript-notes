@@ -55,28 +55,24 @@ const renderCountry = function (data, className = '') {
   countriesContainer.insertAdjacentHTML('beforeend', html);
 };
 
-//modern way - fetch
+//modern way - fetch()
 //returns a promise - an placeholder object for the future result of an asyn operation
 //placeholder for a future value (like a response from ajax call for instance)
 //can be fulfilled (value is available) or rejected (error)
 const getCountryData = function (country) {
+  //the promise must be consumed, done with the .then()
+  //.then(call back function - will be called as soon as promise fulfilled)
+
   fetch(`https://restcountries.com/v2/name/${country}`)
-    .then(function (response) {
+    .then(
+      response => response.json() //but this is also an async function (so will return another promise)
       //call .then() to handle the fetch() promise
-      console.log(response);
       //in order to actually read the response:
-      return response.json(); //but this is also an async function (so will return another promise)
       //to handle this new promise we call another .then() (thats why we return it - to be able to chain the methods)
       //the data we`re looking for comes from this response.json()
-    })
-    .then(function (data) {
-      console.log(data);
-      renderCountry(data[0]);
-    });
+    )
+    .then(data => renderCountry(data[0]));
 };
-//the promise must be consumed, done with the .then()
-//.then(call back function - will be called as soon as promise fulfilled)
-
 getCountryData('vatican');
 // getCountryData('korea');
 countriesContainer.style.opacity = 1;
