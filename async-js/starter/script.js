@@ -4,6 +4,7 @@ const btn = document.querySelector('.btn-country');
 const countriesContainer = document.querySelector('.countries');
 
 ///////////////////////////////////////
+countriesContainer.style.opacity = 1;
 
 //synchronous code is executed line by line
 //each line of code waits for precious line to finish
@@ -60,19 +61,42 @@ const renderCountry = function (data, className = '') {
 //placeholder for a future value (like a response from ajax call for instance)
 //can be fulfilled (value is available) or rejected (error)
 const getCountryData = function (country) {
-  //the promise must be consumed, done with the .then()
-  //.then(call back function - will be called as soon as promise fulfilled)
+  //the promise must be consumed, done with .then()
+  //.then(callback to when promiseis  fulfilled, callback to when fetch is rejected)
 
   fetch(`https://restcountries.com/v2/name/${country}`)
     .then(
-      response => response.json() //but this is also an async function (so will return another promise)
+      response => {
+        //catching errors
+        //in this case (and probably many others) the response object has an 'ok' bollean property
+        //if the status code is 404 it returns ok: false - if status code 200 returns ok: true
+        if (!response.ok)
+          throw new Error(`Country not found ${response.status}`);
+        //throw immediately stops the function and rejects the promise
+
+        return response.json();
+      } //but this is also an async function (so will return another promise)
       //call .then() to handle the fetch() promise
       //in order to actually read the response:
       //to handle this new promise we call another .then() (thats why we return it - to be able to chain the methods)
       //the data we`re looking for comes from this response.json()
     )
-    .then(data => renderCountry(data[0]));
+    .then(data => renderCountry(data[0]))
+    .catch(err => console.error(`${err} error caugth`));
 };
-getCountryData('vatican');
-// getCountryData('korea');
-countriesContainer.style.opacity = 1;
+// getCountryData('brazol');
+getCountryData('brazil');
+getCountryData('korea');
+
+//*the value returned from a then() will be the the parameter for the chained .then() function*
+// fetch(url).then(a => return a).then(data => console.log(data))
+//this will log data in the console (because it was returned by the first .then())
+//this happens if the promise is fulfilled
+//if the promise is rejected, we handle in other ways
+
+//handle rejected promises
+//add .catch(callback) in the end of the .then() chain
+//this will handle any error anywhere in the promise chain
+
+//.finally(callback) - the other (third and maybe last) promise method
+//the callback function will always be called, no matter if the promise is fullfilled or rejected
