@@ -101,14 +101,15 @@ const getCountryData = function (country) {
 //.finally(callback) - the other (third and maybe last) promise method
 //the callback function will always be called, no matter if the promise is fullfilled or rejected
 
-const whereAmI = function (lat, lng) {
-  fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`).then(response =>
-    response.json().then(data =>
-      fetch(`https://restcountries.com/v2/name/${data.country}`)
-        .then(response => response.json())
-        .then(data => renderCountry(data[0]))
-    )
-  );
-};
+// //Challenge 1
+// const whereAmI = function (lat, lng) {
+//   fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`).then(response =>
+//     response.json().then(data =>
+//       fetch(`https://restcountries.com/v2/name/${data.country}`)
+//         .then(response => response.json())
+//         .then(data => renderCountry(data[0]))
+//     )
+//   );
+// };
 
-whereAmI(52.508, 13.381);
+// whereAmI(52.508, 13.381);
