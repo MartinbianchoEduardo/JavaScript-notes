@@ -34,6 +34,14 @@ countriesContainer.style.opacity = 1;
 //     //the destructuring is because the data comes in an array
 //     console.log(data);
 
+const getJSON = function (url, errorMsg = 'something went wrong') {
+  return fetch(url).then(response => {
+    if (!response.ok) throw new Error(`${errorMsg} (${response.status})`);
+
+    return response.json();
+  });
+};
+
 const renderCountry = function (data, className = '') {
   const html = `
         <article class="country ${className}">
@@ -162,4 +170,38 @@ const whereAmI = async function (country) {
   }
 };
 
-whereAmI('brazolasl');
+whereAmI('korea');
+whereAmI('brazil');
+whereAmI('vatican');
+
+const get3Countries = async function (c1, c2, c3) {
+  try {
+    //destructuring because the data comes inside an array
+    // const [data1] = await getJSON(`https://restcountries.com/v2/name/${c1}`);
+    // const [data2] = await getJSON(`https://restcountries.com/v2/name/${c2}`);
+    // const [data3] = await getJSON(`https://restcountries.com/v2/name/${c3}`);
+
+    //this will make so each getJSON() will wait for the other to stop before executing
+    //and is doesn't make much sense to do this
+
+    //so we can run all three getJSON() calls at the same time (in parallel):
+    //Promise.all takes an array of promises and return one promise out of that lot
+    //if one promise rejects, Promise.all will reject
+    const data = await Promise.all([
+      getJSON(`https://restcountries.com/v2/name/${c1}`),
+      getJSON(`https://restcountries.com/v2/name/${c2}`),
+      getJSON(`https://restcountries.com/v2/name/${c3}`),
+    ]);
+    console.log(data.map(d => console.log(d[0].capital)));
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+get3Countries('brazil', 'argentina', 'luxembourg');
+
+//Promise.race exists as well
+//pass an array of promises and they will race against each other
+//the first one fulfilled or rejected will be returned
+//this is good to set timeouts
+//Promise.race([getJson(url), time to user timeout])
