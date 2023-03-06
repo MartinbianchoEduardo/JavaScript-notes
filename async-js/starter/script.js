@@ -192,13 +192,14 @@ const get3Countries = async function (c1, c2, c3) {
       getJSON(`https://restcountries.com/v2/name/${c2}`),
       getJSON(`https://restcountries.com/v2/name/${c3}`),
     ]);
-    console.log(data.map(d => console.log(d[0].capital)));
+
+    data.map(d => console.log(d[0].capital));
   } catch (err) {
     console.error(err);
   }
 };
 
-get3Countries('brazil', 'argentina', 'luxembourg');
+get3Countries('brazil', 'argentina', 'colombia');
 
 //Promise.race exists as well
 //pass an array of promises and they will race against each other
