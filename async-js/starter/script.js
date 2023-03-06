@@ -36,7 +36,7 @@ countriesContainer.style.opacity = 1;
 
 const renderCountry = function (data, className = '') {
   const html = `
-        <article class="country">
+        <article class="country ${className}">
                 <img class="country__img" src="${data.flag}" />
                 <div class="country__data">
                     <h3 class="country__name">${data.name}</h3>
@@ -79,14 +79,14 @@ const getCountryData = function (country) {
       //call .then() to handle the fetch() promise
       //in order to actually read the response:
       //to handle this new promise we call another .then() (thats why we return it - to be able to chain the methods)
-      //the data we`re looking for comes from this response.json()
+      //the data we're looking for comes from this response.json()
     )
     .then(data => renderCountry(data[0]))
     .catch(err => console.error(`${err} error caugth`));
 };
 // getCountryData('brazol');
-getCountryData('brazil');
-getCountryData('korea');
+// getCountryData('brazil');
+// getCountryData('korea');
 
 //*the value returned from a then() will be the the parameter for the chained .then() function*
 // fetch(url).then(a => return a).then(data => console.log(data))
@@ -100,3 +100,15 @@ getCountryData('korea');
 
 //.finally(callback) - the other (third and maybe last) promise method
 //the callback function will always be called, no matter if the promise is fullfilled or rejected
+
+const whereAmI = function (lat, lng) {
+  fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`).then(response =>
+    response.json().then(data =>
+      fetch(`https://restcountries.com/v2/name/${data.country}`)
+        .then(response => response.json())
+        .then(data => renderCountry(data[0]))
+    )
+  );
+};
+
+whereAmI(52.508, 13.381);
