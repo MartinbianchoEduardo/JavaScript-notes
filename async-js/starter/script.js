@@ -113,3 +113,25 @@ const getCountryData = function (country) {
 // };
 
 // whereAmI(52.508, 13.381);
+
+//consuming promises with async and await
+//create a special 'async' function
+//this function will keep running in the background until it returns a promise
+//an async function can have one or more 'await' statements
+const whereAmI = async function (country) {
+  //after 'await' we need a promise (here we'll use the one returned by a fetch())
+  const response = await fetch(`https://restcountries.com/v2/name/${country}`);
+  //'await' will stop the execution of this function until the promise is fullfilled
+
+  // //this is exactly the same as this:
+  // fetch(`https://restcountries.com/v2/name/${country}`).then(response =>
+  //   console.log(response)
+  // );
+
+  const data = await response.json();
+  renderCountry(data[0]);
+
+  // renderCountry(data[0]);
+};
+
+whereAmI('brazil');
