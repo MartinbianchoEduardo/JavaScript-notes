@@ -1,3 +1,4 @@
+import View from './view/View';
 import recipeView from './view/recipeView.js';
 import searchView from './view/searchView.js';
 import * as model from './model.js';
@@ -20,7 +21,7 @@ const controlRecipes = async function () {
     //render recipe
     recipeView.render(model.state.recipe);
   } catch (err) {
-    console.log(err);
+    throw err;
   }
 };
 
