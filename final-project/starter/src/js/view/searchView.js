@@ -9,6 +9,11 @@ class SearchView extends View {
       handler();
     });
   }
+
+  getQuery() {
+    this._clearInput();
+    return this._parentElement.querySelector('.search__field').value;
+  }
 }
 
 export default new SearchView();

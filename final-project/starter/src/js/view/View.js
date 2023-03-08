@@ -26,11 +26,6 @@ export default class View {
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 
-  getQuery() {
-    this._clearInput();
-    return this._parentElement.querySelector('.search__field').value;
-  }
-
   _clearInput() {
     this._parentElement.querySelector('.search__field').value = '';
   }

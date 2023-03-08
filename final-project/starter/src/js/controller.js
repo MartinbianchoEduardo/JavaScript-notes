@@ -12,8 +12,6 @@ const controlRecipes = async function () {
     const id = window.location.hash.slice(1);
     // console.log(id);
 
-    resultsView.renderSpinner();
-
     if (!id) return;
     recipeView.renderSpinner();
 
@@ -29,7 +27,8 @@ const controlRecipes = async function () {
 
 const controlSearchResults = async function () {
   try {
-    await model.loadSearchResults(searchView.getQuery());
+    const query = searchView.getQuery();
+    await model.loadSearchResults(query);
     console.log(model.state.search.results);
   } catch (err) {
     console.log(err);

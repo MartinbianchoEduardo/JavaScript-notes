@@ -11,7 +11,7 @@ export const state = {
 
 export const loadRecipe = async function (id) {
   try {
-    const data = await getJSON(`${API_URL}/${id}`);
+    const data = await getJSON(`${API_URL}${id}`);
 
     //reformat object
     const { recipe } = data.data;
@@ -35,6 +35,8 @@ export const loadRecipe = async function (id) {
 export const loadSearchResults = async function (query) {
   try {
     state.search.query = query;
+    console.log(query);
+
     const data = await getJSON(`${API_URL}?search=${query}`);
     console.log(data.data);
 
