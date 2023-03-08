@@ -1,4 +1,4 @@
-4410
+4411
 142C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\type-fest\source\except.d.ts133226697406750088 0
 138C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\packager-css\lib133226697423120723 1
 134C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\yaml\types\binary.js133226697400453125 0
@@ -19,7 +19,7 @@
 131C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\has-flag\index.js133226697397099861 0
 149C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\source-map\dist\source-map.debug.js133226697412015297 0
 142C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\workers\src\types.js133226697419404299 0
-105C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist133227574332393520 1
+105C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist133227595749300981 1
 145C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\caniuse-lite\data\regions\AW.js133226697416076394 0
 173C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\dom-serializer\node_modules\entities\lib\maps\entities.json133226697432407340 0
 131C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\csso\dist\csso.js133226697411014993 0
@@ -113,7 +113,7 @@
 158C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\caniuse-lite\data\features\iframe-sandbox.js133226697453784135 0
 138C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\entities\lib\decode.d.ts133226697411014993 0
 144C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\watcher\src\Watcher.hh133226697415559525 0
-116C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\src\js\model.js133227569513611446 0
+116C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\src\js\model.js133227586210829979 0
 134C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\svgo\lib\svgo\coa.js133226697408153414 0
 118C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\src\js\helpers.js133227559937484091 0
 161C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\package-manager\src\NodeResolverSync.js133226697443894034 0
@@ -177,7 +177,7 @@
 134C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\terser\dist\.gitkeep133226697399441444 0
 151C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@swc\helpers\src\_define_property.mjs133226697443924141 0
 129C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\xxhash-wasm\esm133226697404093114 1
-112C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\src\js\view133226786970399322 1
+112C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\src\js\view133227586656385715 1
 147C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@swc\helpers\lib\_to_primitive.js133226697425756104 0
 146C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\lmdb\dependencies\lmdb\libraries133226697403009789 1
 132C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\msgpackr\struct.js133226697411375058 0
@@ -195,13 +195,15 @@
 120C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@lezer133226697387844740 1
 145C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\caniuse-lite\data\regions\BG.js133226697420715266 0
 117C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\src\js\config.js133226811323847969 0
+171C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\dom-serializer\node_modules\entities\lib\maps\decode.json133226697431955223 0
+126C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\src\js\view\searchView.js133227595749009630 0
 140C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@swc\helpers\src\index.mjs133226697446587270 0
 144C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\yaml\dist\warnings-1000a372.js133226697416463268 0
 133C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\readdirp\index.d.ts133226697642100611 0
 188C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\msgpackr-extract\node_modules\node-gyp-build-optional-packages\optional.js133226697432040450 0
 145C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\caniuse-lite\data\regions\KN.js133226697455795403 0
 140C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\source-map-js\package.json133226697643846825 0
-121C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\src\js\controller.js133227574331966363 0
+121C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\src\js\controller.js133227594961695090 0
 126C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\src\js\view\recipeView.js133227573964371621 0
 130C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\svgo\lib\svgo.js133226697429838136 0
 128C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\plugin133226697416453160 1
@@ -215,9 +217,6 @@
 153C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\css-tree\lib\utils\createCustomError.js133226697412100800 0
 151C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\type-fest\source\merge-exclusive.d.ts133226697410543431 0
 187C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\aliased\package.json133226697439442963 0
-152C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\caniuse-lite\data\features\minmaxwh.js133226697457544392 0
-154C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\css-tree\lib\syntax\node\TypeSelector.js133226697442769488 0
-124C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\css-select133226697411292481 1
 132C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\htmlnano\README.md133226697424665938 0
 122C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\svgo\bin133226697400970606 1
 120C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\src\img\favicon.png133207777067698413 0
@@ -341,6 +340,9 @@
 131C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\terser\bin\terser133226697402473597 0
 184C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\node-resolver-core\test\fixture\packages\source-alias\other.js133226697429223344 0
 124C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\color-name133226697400915224 1
+152C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\caniuse-lite\data\features\minmaxwh.js133226697457544392 0
+154C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\css-tree\lib\syntax\node\TypeSelector.js133226697442769488 0
+124C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\css-select133226697411292481 1
 122C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\css-tree133226697444431611 1
 145C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\caniuse-lite\data\regions\IL.js133226697453879546 0
 134C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\yaml\browser\util.js133226697415990906 0
@@ -382,15 +384,15 @@
 127C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\dotenv-expand133226697403957739 1
 145C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\optimizer-image\LICENSE133226697430195112 0
 142C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\source-map\lib\base64-vlq.js133226697403281653 0
+137C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\supports-color\index.js133226697401703787 0
 134C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\postcss-value-parser133226697404292199 1
 132C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\lmdb\dict\dict.txt133226697445260796 0
 135C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\readdirp\package.json133226697641958362 0
 159C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@swc\helpers\src\_assert_this_initialized.mjs133226697434984804 0
-130C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\srcset\readme.md133226697402634228 0
 134C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\electron-to-chromium133226697406654712 1
+130C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\srcset\readme.md133226697402634228 0
 151C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@swc\helpers\lib\_array_with_holes.js133226697402894511 0
 133C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\msgpackr\index.d.ts133226697418751487 0
-137C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\supports-color\index.js133226697401703787 0
 140C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\react-refresh\package.json133226697405242096 0
 122C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\entities133226697409152919 1
 151C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\type-fest\source\set-return-type.d.ts133226697413406193 0
@@ -1293,7 +1295,7 @@
 138C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\terser\dist\package.json133226697422089795 0
 140C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\diagnostic\LICENSE133226697438245271 0
 166C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\caniuse-lite\data\features\declarative-shadow-dom.js133226697450044538 0
-126C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\favicon.8b2f57bf.png133227565206202060 0
+126C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\favicon.8b2f57bf.png133227590457473555 0
 139C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\posthtml-render\readme.md133226697403462490 0
 162C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\core\lib\requests\WriteBundlesRequest.js133226697450873134 0
 133C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\terser\bin\uglifyjs133226697402989746 0
@@ -2509,7 +2511,6 @@
 140C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\markdown-ansi\test133226697406539223 1
 159C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\dom-serializer\node_modules\entities\lib\maps133226697434406715 1
 176C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\source-map\parcel_sourcemap_wasm\dist-web\package.json133226697413596897 0
-171C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\dom-serializer\node_modules\entities\lib\maps\decode.json133226697431955223 0
 171C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\dom-serializer\node_modules\entities\lib\maps\legacy.json133226697432689919 0
 145C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\caniuse-lite\data\regions\LR.js133226697456518058 0
 132C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\fs\LICENSE133226697432407340 0
@@ -3929,7 +3930,7 @@
 148C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@mischnic\json-sourcemap\README.md133226697415790138 0
 149C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\runtime-browser-hmr\LICENSE133226697422945212 0
 154C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\runtime-browser-hmr\package.json133226697425745983 0
-124C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\icons.dfd7a6db.svg133227565206553185 0
+124C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\icons.dfd7a6db.svg133227590457632806 0
 168C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\runtime-browser-hmr\src\loaders\.eslintrc.json133226697425012840 0
 159C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\runtime-browser-hmr\lib\HMRRuntime.js133226697424403676 0
 153C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@parcel\runtime-browser-hmr\lib\loaders133226697423317486 1
@@ -4334,7 +4335,7 @@
 165C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@babel\highlight\node_modules\has-flag\package.json133226697430592601 0
 162C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@babel\highlight\node_modules\has-flag\readme.md133226697431603667 0
 169C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@babel\highlight\node_modules\color-name\.eslintrc.json133226697432050585 0
-127C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\index.e37f48ea.js.map133227574332383564 0
+127C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\index.e37f48ea.js.map133227595749290967 0
 165C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@babel\highlight\node_modules\color-name\.npmignore133226697430582664 0
 162C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@babel\highlight\node_modules\color-name\LICENSE133226697431332636 0
 162C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\@babel\highlight\node_modules\color-name\test.js133226697431814426 0
@@ -4400,12 +4401,12 @@
 127C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\.bin\svgo.ps1133226697475908446 0
 125C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\.bin\terser133226697475898512 0
 129C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\node_modules\.bin\terser.ps1133226697475898512 0
-124C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\icons.21bad73c.svg133227565206553185 0
+124C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\icons.21bad73c.svg133227590457612707 0
 123C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\index.62406edb.js133226697679614482 0
-123C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\index.e37f48ea.js133227574332328090 0
-124C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\index.f7626f62.css133227565206011265 0
-128C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\index.f7626f62.css.map133227565206106601 0
-116C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\index.html133227565205524179 0
-123C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\logo.726d37a8.png133227565206951207 0
+123C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\index.e37f48ea.js133227595749255780 0
+124C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\index.f7626f62.css133227590457498618 0
+128C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\index.f7626f62.css.map133227590457652833 0
+116C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\index.html133227590457642863 0
+123C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\logo.726d37a8.png133227590457612707 0
 125C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\starter.3464ddca.js133226697679753435 0
 129C:\Users\E. Martinbiancho\Desktop\Courses\The Complete JavaScript Course\notes\final-project\starter\dist\starter.3464ddca.js.map133226697679793531 0
