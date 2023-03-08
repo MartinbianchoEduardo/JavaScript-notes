@@ -1,4 +1,4 @@
-import View from './view/View';
+import resultsView from './view/resultsView.js';
 import recipeView from './view/recipeView.js';
 import searchView from './view/searchView.js';
 import * as model from './model.js';
@@ -11,6 +11,8 @@ const controlRecipes = async function () {
   try {
     const id = window.location.hash.slice(1);
     // console.log(id);
+
+    resultsView.renderSpinner();
 
     if (!id) return;
     recipeView.renderSpinner();

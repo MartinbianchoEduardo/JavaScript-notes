@@ -1,8 +1,7 @@
 import View from './View';
 
 class ResultsView extends View {
-  _parentElement = document.querySelector('.r');
-  _data;
+  _parentElement = document.querySelector('.results');
 }
 
 export default new ResultsView();

@@ -558,8 +558,8 @@ function hmrAccept(bundle, id) {
 
 },{}],"aenu9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _view = require("./view/View");
-var _viewDefault = parcelHelpers.interopDefault(_view);
+var _resultsViewJs = require("./view/resultsView.js");
+var _resultsViewJsDefault = parcelHelpers.interopDefault(_resultsViewJs);
 var _recipeViewJs = require("./view/recipeView.js");
 var _recipeViewJsDefault = parcelHelpers.interopDefault(_recipeViewJs);
 var _searchViewJs = require("./view/searchView.js");
@@ -571,6 +571,7 @@ const controlRecipes = async function() {
     try {
         const id = window.location.hash.slice(1);
         // console.log(id);
+        (0, _resultsViewJsDefault.default).renderSpinner();
         if (!id) return;
         (0, _recipeViewJsDefault.default).renderSpinner();
         //load recipe
@@ -595,7 +596,7 @@ const init = function() {
 };
 init();
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./model.js":"Y4A21","./view/recipeView.js":"7Olh7","./view/searchView.js":"blwqv","./view/View":"gAkKI"}],"gkKU3":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./model.js":"Y4A21","./view/recipeView.js":"7Olh7","./view/searchView.js":"blwqv","./view/resultsView.js":"46Nfk"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -724,18 +725,6 @@ class RecipeView extends (0, _viewDefault.default) {
         this._clear();
         this._parentElement.insertAdjacentHTML("afterbegin", markup);
     }
-    // #clear() {
-    //   this._parentElement.innerHTML = '';
-    // }
-    // renderSpinner() {
-    //   const markup = `<div class="spinner">
-    //   <svg>
-    //     <use href="${icons}#icon-loader"></use>
-    //   </svg>
-    // </div>`;
-    //   this._clear();
-    //   this._parentElement.insertAdjacentHTML('afterbegin', markup);
-    // }
     addHandlerRender(handler) {
         [
             "hashchange",
@@ -921,6 +910,16 @@ class SearchView extends (0, _viewDefault.default) {
 }
 exports.default = new SearchView();
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./View":"gAkKI"}]},["d8XZh","aenu9"], "aenu9", "parcelRequiredeab")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./View":"gAkKI"}],"46Nfk":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _view = require("./View");
+var _viewDefault = parcelHelpers.interopDefault(_view);
+class ResultsView extends (0, _viewDefault.default) {
+    _parentElement = document.querySelector(".results");
+}
+exports.default = new ResultsView();
+
+},{"./View":"gAkKI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["d8XZh","aenu9"], "aenu9", "parcelRequiredeab")
 
 //# sourceMappingURL=index.e37f48ea.js.map

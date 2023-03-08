@@ -12,21 +12,6 @@ class RecipeView extends View {
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
 
-  // #clear() {
-  //   this._parentElement.innerHTML = '';
-  // }
-
-  // renderSpinner() {
-  //   const markup = `<div class="spinner">
-  //   <svg>
-  //     <use href="${icons}#icon-loader"></use>
-  //   </svg>
-  // </div>`;
-
-  //   this._clear();
-  //   this._parentElement.insertAdjacentHTML('afterbegin', markup);
-  // }
-
   addHandlerRender(handler) {
     ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
   }
