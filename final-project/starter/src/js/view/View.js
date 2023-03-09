@@ -25,8 +25,4 @@ export default class View {
     this._clear();
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
   }
-
-  _clearInput() {
-    this._parentElement.querySelector('.search__field').value = '';
-  }
 }
