@@ -27,10 +27,8 @@ export const loadRecipe = async function (id) {
       cookingTime: recipe.cooking_time,
       ingredients: recipe.ingredients,
     };
-
-    // console.log(state.recipe);
   } catch (err) {
-    console.log(`${err} ERROR CAUGHT`);
+    console.log(`${err} ERROR`);
   }
 };
 
@@ -39,7 +37,6 @@ export const loadSearchResults = async function (query) {
     state.search.query = query;
 
     const data = await getJSON(`${API_URL}?search=${query}`);
-    console.log(data.data);
 
     state.search.results = data.data.recipes.map(recipe => {
       return {

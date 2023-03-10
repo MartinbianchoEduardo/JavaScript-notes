@@ -6,14 +6,9 @@ import PaginationView from './view/paginationView.js';
 import * as model from './model.js';
 import paginationView from './view/paginationView.js';
 
-const recipeContainer = document.querySelector('.recipe');
-
-// https://forkify-api.herokuapp.com/v2
-
 const controlRecipes = async function () {
   try {
     const id = window.location.hash.slice(1);
-    // console.log(id);
 
     if (!id) return;
     recipeView.renderSpinner();
@@ -34,7 +29,6 @@ const controlSearchResults = async function () {
 
     //get search query
     const query = searchView.getQuery();
-    console.log(query);
 
     //load results
     await model.loadSearchResults(query);
