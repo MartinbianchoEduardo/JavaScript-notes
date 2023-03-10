@@ -567,12 +567,9 @@ var _searchViewJsDefault = parcelHelpers.interopDefault(_searchViewJs);
 var _paginationViewJs = require("./view/paginationView.js");
 var _paginationViewJsDefault = parcelHelpers.interopDefault(_paginationViewJs);
 var _modelJs = require("./model.js");
-const recipeContainer = document.querySelector(".recipe");
-// https://forkify-api.herokuapp.com/v2
 const controlRecipes = async function() {
     try {
         const id = window.location.hash.slice(1);
-        // console.log(id);
         if (!id) return;
         (0, _recipeViewJsDefault.default).renderSpinner();
         //load recipe
@@ -588,7 +585,6 @@ const controlSearchResults = async function() {
         (0, _resultsViewJsDefault.default).renderSpinner();
         //get search query
         const query = (0, _searchViewJsDefault.default).getQuery();
-        console.log(query);
         //load results
         await _modelJs.loadSearchResults(query);
         //render results
@@ -766,12 +762,6 @@ var _viewDefault = parcelHelpers.interopDefault(_view);
 class RecipeView extends (0, _viewDefault.default) {
     _parentElement = document.querySelector(".recipe");
     _data;
-    render(data) {
-        this._data = data;
-        const markup = this._generateMarkup();
-        this._clear();
-        this._parentElement.insertAdjacentHTML("afterbegin", markup);
-    }
     addHandlerRender(handler) {
         [
             "hashchange",
@@ -925,7 +915,6 @@ const loadRecipe = async function(id) {
             cookingTime: recipe.cooking_time,
             ingredients: recipe.ingredients
         };
-    // console.log(state.recipe);
     } catch (err) {
         console.log(`${err} ERROR`);
     }
@@ -934,7 +923,6 @@ const loadSearchResults = async function(query) {
     try {
         state.search.query = query;
         const data = await (0, _helpers.getJSON)(`${(0, _config.API_URL)}?search=${query}`);
-        console.log(data.data);
         state.search.results = data.data.recipes.map((recipe)=>{
             return {
                 id: recipe.id,
